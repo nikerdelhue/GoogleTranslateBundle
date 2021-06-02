@@ -1,9 +1,9 @@
 {
-    "name": "eko/googletranslatebundle",
+    "name": "nikerdelhue/googletranslatebundle",
     "type": "library",
     "description": "A Symfony bundle to deals with Google Translate API",
     "keywords": ["google", "translate", "bundle", "api", "detect", "language"],
-    "homepage": "http://github.com/eko/GoogleTranslateBundle",
+    "homepage": "http://github.com/nikerdelhue/GoogleTranslateBundle",
     "license": "MIT",
     "authors": [
         {
