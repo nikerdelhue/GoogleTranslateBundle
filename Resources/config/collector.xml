@@ -5,8 +5,8 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="nikerdelhue.google_translate.data_collector.translate" class="Eko\GoogleTranslateBundle\DataCollector\TranslateDataCollector">
-            <tag name="data_collector" template="EkoGoogleTranslateBundle:Collector:translate" id="nikerdelhue.google_translate.data_collector.translate" />
+        <service id="nikerdelhue.google_translate.data_collector.translate" class="nikerdelhue\GoogleTranslateBundle\DataCollector\TranslateDataCollector">
+            <tag name="data_collector" template="nikerdelhueGoogleTranslateBundle:Collector:translate" id="nikerdelhue.google_translate.data_collector.translate" />
 
             <argument type="service" id="nikerdelhue.google_translate.method_manager" />
         </service>

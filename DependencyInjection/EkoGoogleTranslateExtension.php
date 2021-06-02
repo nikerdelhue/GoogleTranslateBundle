@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the Eko\GoogleTranslateBundle Symfony bundle.
+ * This file is part of the nikerdelhue\GoogleTranslateBundle Symfony bundle.
  *
  * (c) Vincent Composieux <vincent.composieux@gmail.com>
  *
@@ -22,7 +22,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class EkoGoogleTranslateExtension extends Extension
+class nikerdelhueGoogleTranslateExtension extends Extension
 {
     /**
      * {@inheritdoc}

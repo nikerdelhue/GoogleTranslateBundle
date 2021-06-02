@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the Eko\GoogleTranslateBundle Symfony bundle.
+ * This file is part of the nikerdelhue\GoogleTranslateBundle Symfony bundle.
  *
  * (c) Vincent Composieux <vincent.composieux@gmail.com>
  *

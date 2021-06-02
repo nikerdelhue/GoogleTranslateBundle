@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the Eko\GoogleTranslateBundle Symfony bundle.
+ * This file is part of the nikerdelhue\GoogleTranslateBundle Symfony bundle.
  *
  * (c) Vincent Composieux <vincent.composieux@gmail.com>
  *
@@ -10,9 +10,9 @@
 
 namespace nikerdelhue\GoogleTranslateBundle\Translate\Method;
 
-use Eko\GoogleTranslateBundle\Exception\UnableToDetectException;
-use Eko\GoogleTranslateBundle\Translate\Method;
-use Eko\GoogleTranslateBundle\Translate\MethodInterface;
+use nikerdelhue\GoogleTranslateBundle\Exception\UnableToDetectException;
+use nikerdelhue\GoogleTranslateBundle\Translate\Method;
+use nikerdelhue\GoogleTranslateBundle\Translate\MethodInterface;
 
 /**
  * Class Translator.
