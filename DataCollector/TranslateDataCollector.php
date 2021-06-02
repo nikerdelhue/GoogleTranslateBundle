@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the Eko\GoogleTranslateBundle Symfony bundle.
+ * This file is part of the nikerdelhue\GoogleTranslateBundle Symfony bundle.
  *
  * (c) Vincent Composieux <vincent.composieux@gmail.com>
  *
@@ -10,7 +10,7 @@
 
 namespace nikerdelhue\GoogleTranslateBundle\DataCollector;
 
-use Eko\GoogleTranslateBundle\Translate\MethodManager;
+use nikerdelhue\GoogleTranslateBundle\Translate\MethodManager;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\DataCollector\DataCollector;

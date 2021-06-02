@@ -11,7 +11,7 @@
     <services>
         <!-- Manager -->
 
-        <service id="nikerdelhue.google_translate.method_manager" class="Eko\GoogleTranslateBundle\Translate\MethodManager">
+        <service id="nikerdelhue.google_translate.method_manager" class="nikerdelhue\GoogleTranslateBundle\Translate\MethodManager">
             <argument type="collection">
                 <argument type="service" id="nikerdelhue.google_translate.detector" />
                 <argument type="service" id="nikerdelhue.google_translate.languages" />
@@ -21,21 +21,21 @@
 
         <!-- Methods -->
 
-        <service id="nikerdelhue.google_translate.detector" class="Eko\GoogleTranslateBundle\Translate\Method\Detector">
+        <service id="nikerdelhue.google_translate.detector" class="nikerdelhue\GoogleTranslateBundle\Translate\Method\Detector">
             <tag name="nikerdelhue.google_translate.method" />
 
             <argument>%nikerdelhue_google_translate.api_key%</argument>
             <argument type="service" id="nikerdelhue.guzzle_client" />
         </service>
 
-        <service id="nikerdelhue.google_translate.languages" class="Eko\GoogleTranslateBundle\Translate\Method\Languages">
+        <service id="nikerdelhue.google_translate.languages" class="nikerdelhue\GoogleTranslateBundle\Translate\Method\Languages">
             <tag name="nikerdelhue.google_translate.method" />
 
             <argument>%nikerdelhue_google_translate.api_key%</argument>
             <argument type="service" id="nikerdelhue.guzzle_client" />
         </service>
 
-        <service id="nikerdelhue.google_translate.translator" class="Eko\GoogleTranslateBundle\Translate\Method\Translator">
+        <service id="nikerdelhue.google_translate.translator" class="nikerdelhue\GoogleTranslateBundle\Translate\Method\Translator">
             <tag name="nikerdelhue.google_translate.method" />
 
             <argument>%nikerdelhue_google_translate.api_key%</argument>

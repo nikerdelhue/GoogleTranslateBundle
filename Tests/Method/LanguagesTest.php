@@ -2,7 +2,7 @@
 
 namespace nikerdelhue\GoogleTranslateBundle\Tests\Method;
 
-use Eko\GoogleTranslateBundle\Translate\Method\Languages;
+use nikerdelhue\GoogleTranslateBundle\Translate\Method\Languages;
 
 /**
  * Languages class test.
@@ -27,7 +27,7 @@ class LanguagesTest extends \PHPUnit_Framework_TestCase
     protected function setUp()
     {
         $this->languages = $this->getMock(
-            'Eko\GoogleTranslateBundle\Translate\Method\Languages',
+            'nikerdelhue\GoogleTranslateBundle\Translate\Method\Languages',
             null,
             ['fakeapikey', $this->getClientMock()]
         );

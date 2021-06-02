@@ -2,7 +2,7 @@
 
 namespace nikerdelhue\GoogleTranslateBundle\Tests\Method;
 
-use Eko\GoogleTranslateBundle\Translate\Method\Translator;
+use nikerdelhue\GoogleTranslateBundle\Translate\Method\Translator;
 
 /**
  * Translator class test.
@@ -27,7 +27,7 @@ class TranslatorTest extends \PHPUnit_Framework_TestCase
     protected function setUp()
     {
         $this->translator = $this->getMock(
-            'Eko\GoogleTranslateBundle\Translate\Method\Translator',
+            'nikerdelhue\GoogleTranslateBundle\Translate\Method\Translator',
             null,
             ['fakeapikey', $this->getClientMock(), $this->getDetectorMock()]
         );
@@ -155,11 +155,11 @@ class TranslatorTest extends \PHPUnit_Framework_TestCase
     /**
      * Returns detector service mock.
      *
-     * @return \Eko\GoogleTranslateBundle\Translate\Method\Detector
+     * @return \nikerdelhue\GoogleTranslateBundle\Translate\Method\Detector
      */
     public function getDetectorMock()
     {
-        return $this->getMockBuilder('Eko\GoogleTranslateBundle\Translate\Method\Detector')
+        return $this->getMockBuilder('nikerdelhue\GoogleTranslateBundle\Translate\Method\Detector')
             ->disableOriginalConstructor()
             ->getMock();
     }
