@@ -35,7 +35,7 @@ class EkoGoogleTranslateExtension extends Extension
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('methods.xml');
 
-        $container->setParameter('eko_google_translate.api_key', $config['api_key']);
+        $container->setParameter('nikerdelhue_google_translate.api_key', $config['api_key']);
 
         $this->loadProfilerCollector($container, $loader);
     }
@@ -51,7 +51,7 @@ class EkoGoogleTranslateExtension extends Extension
         if ($container->getParameter('kernel.debug')) {
             $loader->load('collector.xml');
 
-            $services = $container->findTaggedServiceIds('eko.google_translate.method');
+            $services = $container->findTaggedServiceIds('nikerdelhue.google_translate.method');
             $identifiers = array_keys($services);
 
             foreach ($identifiers as $identifier) {

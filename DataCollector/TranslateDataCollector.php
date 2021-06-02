@@ -65,7 +65,7 @@ class TranslateDataCollector extends DataCollector implements DataCollectorInter
      */
     public function getName()
     {
-        return 'eko.google_translate.data_collector.translate';
+        return 'nikerdelhue.google_translate.data_collector.translate';
     }
 
     /**
