@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Eko\GoogleTranslateBundle\DependencyInjection;
+namespace nikerdelhue\GoogleTranslateBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

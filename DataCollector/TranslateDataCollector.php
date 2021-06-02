@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Eko\GoogleTranslateBundle\DataCollector;
+namespace nikerdelhue\GoogleTranslateBundle\DataCollector;
 
 use Eko\GoogleTranslateBundle\Translate\MethodManager;
 use Symfony\Component\HttpFoundation\Request;

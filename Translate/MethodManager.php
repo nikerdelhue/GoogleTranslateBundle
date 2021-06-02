@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Eko\GoogleTranslateBundle\Translate;
+namespace nikerdelhue\GoogleTranslateBundle\Translate;
 
 /**
  * Class MethodManager.
