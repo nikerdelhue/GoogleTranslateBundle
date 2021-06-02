@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Eko\GoogleTranslateBundle\Translate\Method;
+namespace nikerdelhue\GoogleTranslateBundle\Translate\Method;
 
 use Eko\GoogleTranslateBundle\Exception\UnableToDetectException;
 use Eko\GoogleTranslateBundle\Translate\Method;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Eko\GoogleTranslateBundle\Tests\Method;
+namespace nikerdelhue\GoogleTranslateBundle\Tests\Method;
 
 use Eko\GoogleTranslateBundle\Translate\Method\Languages;
 

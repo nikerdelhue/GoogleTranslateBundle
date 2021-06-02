@@ -8,15 +8,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Eko\GoogleTranslateBundle;
+namespace nikerdelhue\GoogleTranslateBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class EkoGoogleTranslateBundle.
+ * Class GoogleTranslateBundle.
  *
  * This bundle is used to translate using Google Translate API
  */
-class EkoGoogleTranslateBundle extends Bundle
+class GoogleTranslateBundle extends Bundle
 {
 }
