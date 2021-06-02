@@ -5,45 +5,45 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="eko.guzzle_client.class">GuzzleHttp\Client</parameter>
+        <parameter key="nikerdelhue.guzzle_client.class">GuzzleHttp\Client</parameter>
     </parameters>
 
     <services>
         <!-- Manager -->
 
-        <service id="eko.google_translate.method_manager" class="Eko\GoogleTranslateBundle\Translate\MethodManager">
+        <service id="nikerdelhue.google_translate.method_manager" class="Eko\GoogleTranslateBundle\Translate\MethodManager">
             <argument type="collection">
-                <argument type="service" id="eko.google_translate.detector" />
-                <argument type="service" id="eko.google_translate.languages" />
-                <argument type="service" id="eko.google_translate.translator" />
+                <argument type="service" id="nikerdelhue.google_translate.detector" />
+                <argument type="service" id="nikerdelhue.google_translate.languages" />
+                <argument type="service" id="nikerdelhue.google_translate.translator" />
             </argument>
         </service>
 
         <!-- Methods -->
 
-        <service id="eko.google_translate.detector" class="Eko\GoogleTranslateBundle\Translate\Method\Detector">
-            <tag name="eko.google_translate.method" />
+        <service id="nikerdelhue.google_translate.detector" class="Eko\GoogleTranslateBundle\Translate\Method\Detector">
+            <tag name="nikerdelhue.google_translate.method" />
 
-            <argument>%eko_google_translate.api_key%</argument>
-            <argument type="service" id="eko.guzzle_client" />
+            <argument>%nikerdelhue_google_translate.api_key%</argument>
+            <argument type="service" id="nikerdelhue.guzzle_client" />
         </service>
 
-        <service id="eko.google_translate.languages" class="Eko\GoogleTranslateBundle\Translate\Method\Languages">
-            <tag name="eko.google_translate.method" />
+        <service id="nikerdelhue.google_translate.languages" class="Eko\GoogleTranslateBundle\Translate\Method\Languages">
+            <tag name="nikerdelhue.google_translate.method" />
 
-            <argument>%eko_google_translate.api_key%</argument>
-            <argument type="service" id="eko.guzzle_client" />
+            <argument>%nikerdelhue_google_translate.api_key%</argument>
+            <argument type="service" id="nikerdelhue.guzzle_client" />
         </service>
 
-        <service id="eko.google_translate.translator" class="Eko\GoogleTranslateBundle\Translate\Method\Translator">
-            <tag name="eko.google_translate.method" />
+        <service id="nikerdelhue.google_translate.translator" class="Eko\GoogleTranslateBundle\Translate\Method\Translator">
+            <tag name="nikerdelhue.google_translate.method" />
 
-            <argument>%eko_google_translate.api_key%</argument>
-            <argument type="service" id="eko.guzzle_client" />
-            <argument type="service" id="eko.google_translate.detector" />
+            <argument>%nikerdelhue_google_translate.api_key%</argument>
+            <argument type="service" id="nikerdelhue.guzzle_client" />
+            <argument type="service" id="nikerdelhue.google_translate.detector" />
         </service>
         
-        <service id="eko.guzzle_client" class="%eko.guzzle_client.class%">
+        <service id="nikerdelhue.guzzle_client" class="%nikerdelhue.guzzle_client.class%">
             
         </service>
     </services>
